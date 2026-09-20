@@ -8,9 +8,11 @@ Every linked demo runs on **Sepolia testnet** only. No mainnet, no real funds, n
 
 | What | Where |
 | --- | --- |
-| 🌐 Portfolio (this site) | https://web3-portfolio.vercel.app _(replace with your own Vercel URL)_ |
-| 🎨 NFT Gallery demo | https://web3-nft-gallery.vercel.app _(replace after first deploy)_ |
-| 💻 NFT Gallery source | https://github.com/YOUR_USERNAME/web3-nft-gallery |
+| 🌐 Portfolio (this site) | https://web3-portfolio-pied.vercel.app |
+| 🎨 NFT Gallery demo | https://web3-nft-gallery.vercel.app |
+| 💻 NFT Gallery source | https://github.com/guangkuo80-star/web3-nft-gallery |
+| 📊 Wallet Dashboard demo | https://web3-wallet-dashboard-xi.vercel.app |
+| 💻 Wallet Dashboard source | https://github.com/guangkuo80-star/web3-wallet-dashboard |
 
 ## Tech stack
 
