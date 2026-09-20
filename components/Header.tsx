@@ -1,7 +1,8 @@
 import Link from "next/link";
 
 export default function Header() {
-  const gh = process.env.NEXT_PUBLIC_GITHUB_USERNAME ?? "your-github-username";
+  const gh =
+    process.env.NEXT_PUBLIC_GITHUB_USERNAME?.trim() || "guangkuo80-star";
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-bg/70 backdrop-blur-xl">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">

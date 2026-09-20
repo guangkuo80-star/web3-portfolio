@@ -40,7 +40,7 @@ export const projects: Project[] = [
     network: "sepolia",
     status: "live",
     demoUrl:
-      process.env.NEXT_PUBLIC_DEMO_NFT_GALLERY ??
+      process.env.NEXT_PUBLIC_DEMO_NFT_GALLERY?.trim() ||
       "https://web3-nft-gallery.vercel.app",
     repoUrl: `https://github.com/${gh}/web3-nft-gallery`,
     highlights: [
@@ -85,7 +85,7 @@ export const projects: Project[] = [
     network: "sepolia",
     status: "live",
     demoUrl:
-      process.env.NEXT_PUBLIC_DEMO_WALLET_DASHBOARD ??
+      process.env.NEXT_PUBLIC_DEMO_WALLET_DASHBOARD?.trim() ||
       "https://web3-wallet-dashboard-xi.vercel.app",
     repoUrl: `https://github.com/${gh}/web3-wallet-dashboard`,
     highlights: [
