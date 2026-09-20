@@ -52,21 +52,6 @@ export const projects: Project[] = [
     ],
   },
   {
-    slug: "chain-explorer",
-    name: "Sepolia Chain Explorer",
-    tagline: "Query blocks, transactions and addresses on Sepolia in real time.",
-    description:
-      "Lightweight block explorer built with viem and Alchemy RPC. Look up any address, transaction hash or block number; view balances, nonce, ERC-20 transfers and event logs.",
-    stack: ["Next.js 15", "viem", "Tailwind CSS", "Alchemy RPC"],
-    network: "sepolia",
-    status: "planned",
-    highlights: [
-      "Address overview: ETH balance, tx count, token holdings",
-      "Transaction detail: gas, value, logs, decoded inputs",
-      "Block detail: tx list, miner/validator, difficulty",
-    ],
-  },
-  {
     slug: "wallet-dashboard",
     name: "Wallet Dashboard",
     tagline: "Connect your wallet and see all Sepolia assets in one place.",
@@ -92,7 +77,7 @@ export const projects: Project[] = [
       "Batched multi-token balance aggregation via useReadContracts (multicall)",
       "Cross-demo: reads the NFT Gallery contract's tokensOfOwner() live",
       "Live Sepolia block number + gas price polled from a public RPC",
-      "Graceful degradation — every panel works without optional API keys",
+      "Every panel still renders when optional API keys are missing",
     ],
   },
 ];
