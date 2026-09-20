@@ -15,7 +15,7 @@ export type Project = {
   highlights: string[];
 };
 
-const gh = process.env.NEXT_PUBLIC_GITHUB_USERNAME ?? "your-github-username";
+const gh = process.env.NEXT_PUBLIC_GITHUB_USERNAME ?? "guangkuo80-star";
 
 export const projects: Project[] = [
   {
@@ -38,7 +38,9 @@ export const projects: Project[] = [
     ],
     network: "sepolia",
     status: "live",
-    demoUrl: process.env.NEXT_PUBLIC_DEMO_NFT_GALLERY,
+    demoUrl:
+      process.env.NEXT_PUBLIC_DEMO_NFT_GALLERY ??
+      "https://web3-nft-gallery.vercel.app",
     repoUrl: `https://github.com/${gh}/web3-nft-gallery`,
     highlights: [
       "Custom ERC-721 with on-chain mint price, per-wallet cap and pausable switch",
@@ -81,7 +83,9 @@ export const projects: Project[] = [
     ],
     network: "sepolia",
     status: "live",
-    demoUrl: process.env.NEXT_PUBLIC_DEMO_WALLET_DASHBOARD,
+    demoUrl:
+      process.env.NEXT_PUBLIC_DEMO_WALLET_DASHBOARD ??
+      "https://web3-wallet-dashboard-xi.vercel.app",
     repoUrl: `https://github.com/${gh}/web3-wallet-dashboard`,
     highlights: [
       "Read-only by design — no writeContract, no signing, no private key",
