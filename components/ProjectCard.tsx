@@ -69,14 +69,20 @@ export default function ProjectCard({ project }: { project: Project }) {
             Demo soon
           </span>
         )}
-        <a
-          href={project.repoUrl}
-          target="_blank"
-          rel="noreferrer"
-          className="rounded-md border border-border bg-bg/40 px-3.5 py-1.5 font-medium text-white/80 transition hover:border-accent/40 hover:text-white"
-        >
-          Source
-        </a>
+        {project.repoUrl ? (
+          <a
+            href={project.repoUrl}
+            target="_blank"
+            rel="noreferrer"
+            className="rounded-md border border-border bg-bg/40 px-3.5 py-1.5 font-medium text-white/80 transition hover:border-accent/40 hover:text-white"
+          >
+            Source
+          </a>
+        ) : (
+          <span className="rounded-md border border-border bg-bg/40 px-3.5 py-1.5 font-medium text-white/40">
+            Repo soon
+          </span>
+        )}
         <span className="ml-auto font-mono text-[10px] uppercase tracking-wider text-white/40">
           {project.network}
         </span>

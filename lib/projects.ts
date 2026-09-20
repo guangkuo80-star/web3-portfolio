@@ -10,8 +10,8 @@ export type Project = {
   status: ProjectStatus;
   /** Vercel demo URL — set via env or hardcode after first deploy */
   demoUrl?: string;
-  /** GitHub repo URL */
-  repoUrl: string;
+  /** GitHub repo URL — omit for planned repos that don't exist yet */
+  repoUrl?: string;
   highlights: string[];
 };
 
@@ -60,7 +60,6 @@ export const projects: Project[] = [
     stack: ["Next.js 15", "viem", "Tailwind CSS", "Alchemy RPC"],
     network: "sepolia",
     status: "planned",
-    repoUrl: `https://github.com/${gh}/web3-chain-explorer`,
     highlights: [
       "Address overview: ETH balance, tx count, token holdings",
       "Transaction detail: gas, value, logs, decoded inputs",
