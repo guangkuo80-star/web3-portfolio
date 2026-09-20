@@ -1,6 +1,7 @@
 export default function Footer() {
   const year = new Date().getFullYear();
-  const gh = process.env.NEXT_PUBLIC_GITHUB_USERNAME ?? "your-github-username";
+  const gh =
+    process.env.NEXT_PUBLIC_GITHUB_USERNAME?.trim() || "guangkuo80-star";
   const email = process.env.NEXT_PUBLIC_EMAIL;
   const linkedin = process.env.NEXT_PUBLIC_LINKEDIN;
   const discord = process.env.NEXT_PUBLIC_DISCORD;

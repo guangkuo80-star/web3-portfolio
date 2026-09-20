@@ -41,7 +41,8 @@ export default function Hero() {
             </a>
             <a
               href={`https://github.com/${
-                process.env.NEXT_PUBLIC_GITHUB_USERNAME ?? "your-github-username"
+                process.env.NEXT_PUBLIC_GITHUB_USERNAME?.trim() ||
+                "guangkuo80-star"
               }`}
               target="_blank"
               rel="noreferrer"

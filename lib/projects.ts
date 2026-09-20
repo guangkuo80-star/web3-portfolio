@@ -15,7 +15,8 @@ export type Project = {
   highlights: string[];
 };
 
-const gh = process.env.NEXT_PUBLIC_GITHUB_USERNAME ?? "guangkuo80-star";
+const gh =
+  process.env.NEXT_PUBLIC_GITHUB_USERNAME?.trim() || "guangkuo80-star";
 
 export const projects: Project[] = [
   {
